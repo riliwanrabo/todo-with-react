@@ -1,10 +1,7 @@
-require("./stylesheets/main.scss");
-console.log("aye");
-class Animal {
-  sound(sound) {
-    console.log(sound);
-  }
-}
+import "./stylesheets/main.scss";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "../components/App.jsx";
 
-const goat = new Animal();
-goat.sound("bleat");
+const root = document.getElementById("container");
+ReactDOM.render(<App />, root);

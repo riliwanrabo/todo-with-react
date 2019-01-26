@@ -33,5 +33,10 @@ module.exports = {
     ]
   },
 
-  plugins: [hwp_plugin, mcep_plugin]
+  plugins: [hwp_plugin, mcep_plugin],
+  devServer: {
+    proxy: {
+      "/api": "http://localhost:3000"
+    }
+  }
 };
